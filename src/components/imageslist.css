@@ -1,0 +1,34 @@
+.images-list {
+    max-width: 1920px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: darkslategray;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.images-list-masonry {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-item {
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.images-image {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
