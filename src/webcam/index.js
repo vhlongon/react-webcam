@@ -15,7 +15,7 @@ export default function webcam(el, {onSnapClick = () => {}}) {
         navigator.mediaDevices.getUserMedia({ video: true, audio: false })
             .then(localMediaStream => {
                 // the media stream has to be transformed so that the video element can understand it
-                videoNode.src = window.URL.createObjectURL(localMediaStream);
+                videoNode.srcObject = localMediaStream
                 videoNode.play();
             })
             .catch(err => {
